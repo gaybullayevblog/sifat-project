@@ -1,0 +1,583 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #05A42C;
+    --bg-color-2: #046D1E;
+    --bg-color-3: #09a330;
+}
+
+.propery {
+    background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.propery .propery-box ul {
+    display: flex;
+    padding-top: 40px;
+    gap: 40px;
+    list-style: none;
+}
+
+.propery .propery-box ul li:hover {
+    cursor: pointer;
+    color: var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.propery .propery-box ul li ion-icon {
+    width: 20px;
+    height: 20px;
+    font-weight: 600;
+}
+
+.nice {
+    display: flex;
+    gap: 50px;
+    height: 700px;
+    background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
+}
+
+.nice .nice-box {
+    padding: 80px 20px;
+}
+
+.nice .nice-box h1 {
+    font-size: 70px;
+    font-family: serif;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.nice .nice-box p {
+    color: #666666;
+    font-size: 30px;
+    font-family: serif;
+    padding: 20px 20px;
+}
+
+.nice .nice-box button {
+    width: 267px;
+    height: 80px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    border: none;
+}
+
+.nice .nice-box button:hover {
+    box-shadow: 1px 1px 30px 1px #046D1E;
+    transition: 0.5s ease;
+    background: var(--bg-color-3);
+}
+
+.nice .nice-box button span {
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 0px 20px;
+}
+
+.nice .nice-box button ion-icon {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.trees {
+    display: flex;
+    gap: 30px;
+    margin-left: 700px;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.trees .trees-box:hover p {
+    color: var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.trees .trees-box:hover {
+    box-shadow: 1px 1px 30px 1px #90909090;
+    transition: 0.5s ease;
+}
+
+.trees .trees-box {
+    width: 248px;
+    border-radius: 10px;
+    height: 200px;
+    background: linear-gradient(0deg, #91C89E 0%, rgba(219, 249, 226, 0) 100%);
+}
+
+.trees .trees-box img {
+    margin-top: -120px;
+}
+
+.trees .trees-box p {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+}
+
+.trees .trees-box1 .icon ion-icon {
+    font-size: 40px;
+}
+
+.our-card h1 {
+    padding: 60px 0px;
+    text-align: center;
+    font-size: 50px;
+    font-family: serif;
+    font-weight: 550;
+}
+
+.our-card {
+    background: #F1FEF4;
+    margin-top: 150px;
+    height: 600px;
+}
+
+.our-card .our {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our-card .our .our-box p {
+    text-align: center;
+    color: #808080;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.our-card .our .our-box img {
+    margin-left: 120px;
+    padding: 40px 0px;
+}
+
+.our-card .our .our-box h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    font-family: serif;
+}
+
+
+.about {
+    display: flex;
+    gap: 200px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-box h1 {
+    font-size: 50px;
+    font-weight: 550;
+    font-family: Poppins;
+    color: #030C0C;
+}
+
+.about-box p {
+    color: #808080;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Poppins;
+}
+
+.about-box button {
+    width: 170px;
+    height: 60px;
+    background: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.about-box button:hover {
+    background: white;
+    border: 1px solid var(--bg-color);
+    border-top: none;
+    border-bottom: none;
+
+    transition: 0.5s ease;
+}
+
+.about-box button:hover span {
+    transition: 0.5s ease;
+    color: var(--bg-color);
+}
+
+.about-box button span {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.best-card {
+    background: #F1FEF4;
+    height: 1920px;
+    height: 1017px;
+    margin-top: 50px;
+}
+
+.best-card h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 550;
+    font-family: Poppins;
+    color: #030C0C;
+}
+
+.best-card p {
+    text-align: center;
+    color: #808080;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Poppins;
+}
+
+.best-card .best {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px;
+}
+
+.best-card .best .best-box {
+    width: 346px;
+    border-radius: 10px;
+    height: 272px;
+    box-shadow: 1px 1px 40px 1px #90909090;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--bg-color);
+}
+
+.best-card .best .best-box img {
+    margin-left: 50px;
+    margin-top: -390px;
+}
+
+.best-card .best .best-box h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+.best-card .best .best-box p {
+    color: #808080;
+}
+
+.best-card .best .best-box .btn {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.best-card .best .best-box .btn h3 {
+    color: var(--bg-color);
+    font-size: 28px;
+    font-family: Poppins;
+}
+
+.best-card .best .best-box:hover {
+    background: var(--bg-color);
+    transition: 0.5s ease;
+    box-shadow: 1px 1px 50px 1px var(--bg-color);
+}
+
+.best-card .best .best-box:hover h2 {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.best-card .best .best-box:hover p {
+    color: rgb(97, 97, 97);
+    transition: 0.5s ease;
+}
+
+.best-card .best .best-box:hover .btn h3 {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.best-card .best .best-box .btn button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: white;
+    border-radius: 5px;
+}
+
+.best-card .best .best-box .btn {
+    padding: 20px;
+}
+
+.best-card .best .best-box:hover .btn button {
+    background: var(--bg-color-2);
+}
+
+.best-card .best .best-box .btn button span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.best-card .best .best-box {
+    border-top: 1px solid var(--bg-color);
+}
+
+.servise-card {
+    margin-top: 150px;
+}
+
+.servise-card .servise {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.servise-card .servise .servise-box h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    color: #333333;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.servise-card .servise .servise-box h2:hover {
+    color: var(--bg-color);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.servise-card .servise .servise-box p {
+    color: #808080;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.input-div {
+    margin-bottom: 100px;
+}
+
+.input-div h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: 550;
+    font-family: Poppins;
+    color: #030C0C;
+}
+
+.input-div .inp {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.input-div .inp input {
+    padding: 10px 20px;
+    width: 455px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 550;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-div .inp input:hover {
+    background: #8080803a;
+    transition: 0.5s ease;
+}
+
+.input-div .inp button {
+    background: var(--bg-color);
+    width: 168px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-div .inp button:hover {
+    background: var(--bg-color-2);
+    transition: 0.5s ease;
+}
+
+.input-div .inp button span {
+    color: white;
+    font-size: 20px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background: #D8E9D6;
+    width: 100%;
+    height: 40vh;
+    flex-wrap: wrap;
+}
+
+footer .pron-ftr img {
+    margin-bottom: 30px;
+}
+
+footer .pron-ftr p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer .pron-ftr .pron-icon {
+    display: flex;
+    gap: 20px;
+}
+
+footer .pron-ftr .pron-icon .pr-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--bg-color-2);
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--bg-color-2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+footer .pron-ftr .pron-icon .pr-icon:hover {
+    background: var(--bg-color-2);
+    color: #fff;
+}
+
+footer .useful-ftr h1,
+footer .our_service h1,
+footer .myaccount-ftr h1 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+
+footer .useful-ftr .h3s,
+footer .our_service .h3s,
+footer .myaccount-ftr .h3s {
+    position: relative;
+    top: 20px;
+}
+
+footer .useful-ftr .h3s h3,
+footer .our_service .h3s h3,
+footer .myaccount-ftr .h3s h3 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #666666;
+    transition: all 0.4s ease;
+}
+
+footer .useful-ftr .h3s h3:hover,
+footer .our_service .h3s h3:hover,
+footer .myaccount-ftr .h3s h3:hover {
+    color: var(--bg-color-2);
+}
+
+footer .got_qstn {
+    margin-left: 20px;
+    line-height: 2.1;
+}
+
+footer .got_qstn h2 {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+footer .got_qstn h1 {
+    color: var(--bg-color-2);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+}
+
+footer .got_qstn .text-card {
+    position: relative;
+    top: 20px;
+}
+
+footer .got_qstn .text-card h3 {
+    font-size: 17px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 390px) {
+    .propery{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .propery .propery-box li{
+        font-size: 10px;
+    }
+
+    .nice{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+    }
+    .nice-box1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nice-box1 img{
+        width: 60%;
+        height: 90%;
+
+    }
+
+    .nice .nice-box h1{
+        font-size: 30px;
+    }
+
+    .nice .nice-box p{
+        font-size: 20px;
+    }
+
+    .nice .nice-box button{
+        width: 100px;
+        height: 30px;
+    }
+
+    .nice .nice-box button span{
+        font-size: 10px;
+    }
+}
