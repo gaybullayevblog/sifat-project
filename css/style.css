@@ -5,64 +5,82 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #05A42C;
     --bg-color-2: #046D1E;
     --bg-color-3: #09a330;
 }
 
-.propery {
+/* default values */
+
+h1 {
+    font-size: 40px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+
+/* navbar start */
+
+nav {
     background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.propery .propery-box ul {
+nav .nav-box ul {
     display: flex;
     padding-top: 40px;
     gap: 40px;
     list-style: none;
 }
 
-.propery .propery-box ul li:hover {
+nav .nav-box ul li:hover {
     cursor: pointer;
     color: var(--bg-color);
     transition: 0.5s ease;
 }
 
-.propery .propery-box ul li ion-icon {
+nav .nav-box ul li ion-icon {
     width: 20px;
     height: 20px;
     font-weight: 600;
 }
 
-.nice {
+/* navbar end */
+
+
+/* main start */
+
+.main {
     display: flex;
     gap: 50px;
     height: 700px;
     background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
 }
 
-.nice .nice-box {
-    padding: 80px 20px;
+.main .main-txt {
+    padding: 80px 0;
+    width: 582px;
 }
 
-.nice .nice-box h1 {
-    font-size: 70px;
-    font-family: serif;
-    font-weight: 600;
-    padding: 20px;
+.main .main-txt h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: capitalize;
 }
 
-.nice .nice-box p {
+.main .main-txt p {
     color: #666666;
     font-size: 30px;
     font-family: serif;
     padding: 20px 20px;
 }
 
-.nice .nice-box button {
+.main .main-txt button {
     width: 267px;
     height: 80px;
     background: var(--bg-color);
@@ -70,26 +88,33 @@
     border: none;
 }
 
-.nice .nice-box button:hover {
+.main .main-txt button:hover {
     box-shadow: 1px 1px 30px 1px #046D1E;
     transition: 0.5s ease;
     background: var(--bg-color-3);
 }
 
-.nice .nice-box button span {
+.main .main-txt button span {
     color: white;
     font-size: 25px;
     font-weight: 550;
     padding: 0px 20px;
 }
 
-.nice .nice-box button ion-icon {
+.main .main-txt button ion-icon {
     color: white;
     font-size: 25px;
     font-weight: 600;
 }
 
-.trees {
+/* main end */
+
+
+/* sliders start */
+
+.sliders {
+    width: 50%;
+    height: 30vh;
     display: flex;
     gap: 30px;
     margin-left: 700px;
@@ -97,49 +122,52 @@
     margin-top: 130px;
 }
 
-.trees .trees-box:hover p {
+.sliders .slider-box:hover p {
     color: var(--bg-color);
     transition: 0.5s ease;
 }
 
-.trees .trees-box:hover {
+.sliders .slider-box:hover {
     box-shadow: 1px 1px 30px 1px #90909090;
     transition: 0.5s ease;
 }
 
-.trees .trees-box {
+.sliders .slider-box {
     width: 248px;
     border-radius: 10px;
     height: 200px;
     background: linear-gradient(0deg, #91C89E 0%, rgba(219, 249, 226, 0) 100%);
 }
 
-.trees .trees-box img {
+.sliders .slider-box img {
     margin-top: -120px;
 }
 
-.trees .trees-box p {
+.sliders .slider-box p {
     font-size: 18px;
     color: #333333;
     text-align: center;
 }
 
-.trees .trees-box1 .icon ion-icon {
+.sliders .slider-icon .icon ion-icon {
     font-size: 40px;
 }
 
-.our-card h1 {
-    padding: 60px 0px;
-    text-align: center;
-    font-size: 50px;
-    font-family: serif;
-    font-weight: 550;
-}
+/* sliders end */
+
+
+/* our-card start */
 
 .our-card {
+    width: 100%;
+    height: 55vh;
     background: #F1FEF4;
     margin-top: 150px;
-    height: 600px;
+    padding: 60px 0px;
+}
+
+.our-card h1 {
+    text-align: center;
 }
 
 .our-card .our {
@@ -170,8 +198,12 @@
     font-family: serif;
 }
 
+/* our-card end */
 
-.about {
+
+/* trees start */
+
+.trees {
     display: flex;
     gap: 200px;
     margin-top: 100px;
@@ -179,21 +211,22 @@
     justify-content: center;
 }
 
-.about-box h1 {
-    font-size: 50px;
-    font-weight: 550;
-    font-family: Poppins;
-    color: #030C0C;
+.trees .trees-txt {
+    width: 611px;
 }
 
-.about-box p {
+.trees .trees-txt h1 {
+    font-size: 50px;
+}
+
+.trees .trees-txt p {
     color: #808080;
     font-size: 20px;
     line-height: 1.5;
-    font-family: Poppins;
+    padding: 24px 0 48px;
 }
 
-.about-box button {
+.trees .trees-txt button {
     width: 170px;
     height: 60px;
     background: var(--bg-color);
@@ -202,7 +235,7 @@
     margin-top: 30px;
 }
 
-.about-box button:hover {
+.trees .trees-txt button:hover {
     background: white;
     border: 1px solid var(--bg-color);
     border-top: none;
@@ -211,17 +244,20 @@
     transition: 0.5s ease;
 }
 
-.about-box button:hover span {
+.trees .trees-txt button:hover span {
     transition: 0.5s ease;
     color: var(--bg-color);
 }
 
-.about-box button span {
+.trees .trees-txt button span {
     color: white;
     font-size: 18px;
     font-weight: 600;
     padding: 20px;
 }
+
+/* trees end */
+
 
 .best-card {
     background: #F1FEF4;
@@ -537,47 +573,59 @@ footer .got_qstn .text-card h3 {
 /*# sourceMappingURL=style.css.map */
 
 @media screen and (max-width: 390px) {
-    .propery{
+    .propery {
         width: 100%;
         padding: 10px;
     }
 
-    .propery .propery-box li{
+    .propery-box {
+        display: flex;
+        visibility: hidden;
+    }
+
+    .propery .propery-box li {
         font-size: 10px;
     }
 
-    .nice{
+    .nice {
         width: 100%;
+        height: 100vh;
         display: flex;
         flex-wrap: wrap;
         padding: 0;
         gap: 0;
     }
-    .nice-box1{
+
+    .nice-box1 {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .nice-box1 img{
+
+    .nice-box1 img {
         width: 60%;
         height: 90%;
-
     }
 
-    .nice .nice-box h1{
+    .nice .nice-box h1 {
         font-size: 30px;
     }
 
-    .nice .nice-box p{
+    .nice .nice-box p {
         font-size: 20px;
     }
 
-    .nice .nice-box button{
+    .nice .nice-box button {
         width: 100px;
         height: 30px;
     }
 
-    .nice .nice-box button span{
+    .nice .nice-box button span {
         font-size: 10px;
+    }
+
+    .trees {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
