@@ -263,6 +263,8 @@ nav .nav-box ul li ion-icon {
 /* trees end */
 
 
+/* best-card start */ 
+
 .best-card {
     background: #F1FEF4;
     height: 1920px;
@@ -378,8 +380,22 @@ nav .nav-box ul li ion-icon {
     border-top: 1px solid var(--bg-color);
 }
 
+/* best-card end */
+
+
+
+/* servise-card start */
+
 .servise-card {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 250px;
     margin-top: 150px;
+}
+
+.servise-card .servise{
+    display: flex;
+    justify-content: space-around;
 }
 
 .servise-card .servise {
@@ -391,8 +407,8 @@ nav .nav-box ul li ion-icon {
 }
 
 .servise-card .servise .servise-box h2 {
-    font-size: 40px;
-    font-family: Poppins;
+    font-size: 24px;
+    font-family: 'Lora', serif;
     color: #333333;
     font-weight: 500;
     padding: 15px;
@@ -406,10 +422,16 @@ nav .nav-box ul li ion-icon {
 
 .servise-card .servise .servise-box p {
     color: #808080;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     padding: 20px;
 }
+
+/* servose-card end */
+
+
+
+/* input-div start */
 
 .input-div {
     margin-bottom: 100px;
@@ -466,6 +488,11 @@ nav .nav-box ul li ion-icon {
     font-size: 20px;
 }
 
+/* input-div end */
+
+
+
+/* footer start */
 
 footer {
     display: flex;
@@ -573,6 +600,9 @@ footer .got_qstn .text-card h3 {
     font-weight: 400;
     margin-bottom: 5px;
 }
+
+
+/* footer end */
 
 /*# sourceMappingURL=style.css.map */
 
