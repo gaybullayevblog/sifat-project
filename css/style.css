@@ -178,6 +178,10 @@ nav .nav-box ul li ion-icon {
     flex-wrap: wrap;
 }
 
+.our-card .our .our-box{
+    width: 285px;
+}
+
 .our-card .our .our-box p {
     text-align: center;
     color: #808080;
