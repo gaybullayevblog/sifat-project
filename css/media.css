@@ -1,0 +1,62 @@
+@import url('./style.css');
+
+@media only screen and (max-width: 375px) {
+
+    /* nav start */
+    nav {
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        visibility: hidden;
+    }
+
+    /* nav end */
+
+
+
+    /* main start */
+    .main {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .main .main-img img {
+        width: 95%;
+        height: 300px;
+
+    }
+
+    .main .main-txt h1 {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .main .main-txt p {
+        font-size: 18px;
+    }
+
+    .main .main-txt button{
+        width: 130px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .main-txt button span{
+        font-size: 16px;
+        padding: 0;
+
+    }
+
+    /* main end */
+
+    /* slider start */
+
+    .sliders{
+        
+    }
+
+    /* slider end */
+}

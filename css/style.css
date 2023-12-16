@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -56,8 +57,12 @@ nav .nav-box ul li ion-icon {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
     gap: 50px;
-    height: 700px;
     background: linear-gradient(90deg, rgba(201, 253, 214, 0) 0%, #C9FDD6 100%);
 }
 
@@ -77,7 +82,7 @@ nav .nav-box ul li ion-icon {
     color: #666666;
     font-size: 30px;
     font-family: serif;
-    padding: 20px 20px;
+    padding: 20px 0 20px;
 }
 
 .main .main-txt button {
@@ -116,6 +121,7 @@ nav .nav-box ul li ion-icon {
     width: 50%;
     height: 30vh;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-left: 700px;
     padding: 20px;
@@ -178,7 +184,7 @@ nav .nav-box ul li ion-icon {
     flex-wrap: wrap;
 }
 
-.our-card .our .our-box{
+.our-card .our .our-box {
     width: 285px;
 }
 
@@ -263,7 +269,7 @@ nav .nav-box ul li ion-icon {
 /* trees end */
 
 
-/* best-card start */ 
+/* best-card start */
 
 .best-card {
     background: #F1FEF4;
@@ -275,9 +281,8 @@ nav .nav-box ul li ion-icon {
 .best-card h1 {
     margin-top: 100px;
     text-align: center;
-    font-size: 50px;
-    font-weight: 550;
-    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 500;
     color: #030C0C;
 }
 
@@ -390,10 +395,14 @@ nav .nav-box ul li ion-icon {
     width: 100%;
     height: 100vh;
     padding: 100px 250px;
-    margin-top: 150px;
 }
 
-.servise-card .servise{
+.servise-card>p {
+    padding: 20px 0 80px;
+    width: 600px;
+}
+
+.servise-card .servise {
     display: flex;
     justify-content: space-around;
 }
@@ -439,11 +448,6 @@ nav .nav-box ul li ion-icon {
 
 .input-div h1 {
     text-align: center;
-    font-size: 50px;
-    margin-top: 100px;
-    font-weight: 550;
-    font-family: Poppins;
-    color: #030C0C;
 }
 
 .input-div .inp {
@@ -459,10 +463,12 @@ nav .nav-box ul li ion-icon {
     width: 455px;
     height: 70px;
     font-size: 18px;
-    font-weight: 550;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
     outline: none;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .input-div .inp input:hover {
@@ -476,6 +482,7 @@ nav .nav-box ul li ion-icon {
     height: 70px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .input-div .inp button:hover {
@@ -496,13 +503,14 @@ nav .nav-box ul li ion-icon {
 
 footer {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 60px;
     background: #D8E9D6;
     width: 100%;
     height: 40vh;
     flex-wrap: wrap;
+    padding: 43px 0 73px;
 }
 
 footer .pron-ftr img {
@@ -542,9 +550,8 @@ footer .pron-ftr .pron-icon .pr-icon:hover {
 footer .useful-ftr h1,
 footer .our_service h1,
 footer .myaccount-ftr h1 {
-    font-size: 25px;
-    font-weight: 600;
-    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 footer .useful-ftr .h3s,
@@ -577,16 +584,15 @@ footer .got_qstn {
 }
 
 footer .got_qstn h2 {
-    font-weight: 600;
-    font-size: 25px;
-    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 footer .got_qstn h1 {
     color: var(--bg-color-2);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
-    font-family: "Playfair Display", serif;
 }
 
 footer .got_qstn .text-card {
@@ -603,63 +609,3 @@ footer .got_qstn .text-card h3 {
 
 
 /* footer end */
-
-/*# sourceMappingURL=style.css.map */
-
-@media screen and (max-width: 390px) {
-    .propery {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .propery-box {
-        display: flex;
-        visibility: hidden;
-    }
-
-    .propery .propery-box li {
-        font-size: 10px;
-    }
-
-    .nice {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        gap: 0;
-    }
-
-    .nice-box1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nice-box1 img {
-        width: 60%;
-        height: 90%;
-    }
-
-    .nice .nice-box h1 {
-        font-size: 30px;
-    }
-
-    .nice .nice-box p {
-        font-size: 20px;
-    }
-
-    .nice .nice-box button {
-        width: 100px;
-        height: 30px;
-    }
-
-    .nice .nice-box button span {
-        font-size: 10px;
-    }
-
-    .trees {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
